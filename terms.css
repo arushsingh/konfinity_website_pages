@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: silver;
+    background-color: #202020;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.termsheader{margin-left: 1rem;}
+.termsheader h2{
+    font-size: 2rem;
+    color: #4e86d8;
+}
+.termsheader p {
+    margin-right: .5rem;
+}
+.termsheader h3{
+    color: #4e86d8;
+}
