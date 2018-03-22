@@ -1,5 +1,6 @@
 body{
     background-color: #202020;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .head_container{
     color: silver;
@@ -11,35 +12,62 @@ body{
 .head_container h2{
     text-align: center;
 }
-.img_wrapper{
-    height: 7rem;
-    width: 7rem;
-    background-image: url("./images/gabriel-lopez-389225-unsplash.jpg");
-    border-radius: 50%;
-    margin-left: 34%;
-}
-.img_wrapper img{
-    width: 7rem;
-    border-radius: 50%;
-    position: absolute;
-    height: 7rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.contentsection {
+.gridcontainer{
+    border-radius: 3%;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: repeat(2,minmax(100px,auto));
+    grid-template-areas: 'img header''content content';
     width: 90%;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-margin-left: 5%;
-height: 16rem;
-position: relative;
-top: -2rem;
-color: silver;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+    margin-top: 4rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.5);
 }
-.contentsection .content{
-    padding: 1rem;
+.imagecontainer{
+    grid-area: img;
+}
+.imagecontainer img{
+    width: 82%;
+    height: 6rem;
+margin: 0.5rem;
+border-radius: 4%;
+}
+.imageheader{
+    grid-area: header;
+}
+.imageheader p {
     font-size: 1rem;
+    color: silver;
 }
-.cont_footer ul{
-    margin-left: -1.3rem;
-    list-style-type: none;
+.imageheader spam{
+    color: rebeccapurple;
+    font-size: 1.5rem;
+}
+.content_section{
+    grid-area: content;
+}
+.content_section p{
+    margin: 1.6rem;
+    color: silver;
+}
+.buttoncontainer .leftarrow{
+    border: none;
+height: 2.5rem;
+width: 11%;
+position: relative;
+bottom: 14rem;
+background-color: #202020;
+color: silver;
+left: -6px;
+border-radius: 10%;
+box-shadow: 0 1px 3px rgba(0,0,0,0), 0 1px 2px rgba(0,0,0,0.5);
+}
+.buttoncontainer .rightarrow{
+    float: right;
+    margin-left: -11px;
+    position: relative;
+}
+.buttoncontainer {
+    margin-left: 2%;
+
 }

@@ -150,14 +150,16 @@ color: #4e86d8;
 }
 .usp .student img{
     opacity: .2;
+    z-index: 0;
 }
 .student .overlay_teach{
     width: 71%;
 margin-left: 12%;
 position: absolute;
-margin-top: 16%;
+margin-top: 8%;
 color: silver;
 text-align: center;
+z-index: 1;
 }
 .overlay_teach button{
     height: 2rem;
@@ -166,6 +168,7 @@ border-radius: 5px;
 background: no-repeat;
 color: #4e86d8;
 font-size: 1rem;
+box-shadow: 0 1px 3px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.5);
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .footer{
@@ -195,7 +198,7 @@ margin-bottom: .4rem;
 .copyright p{
     padding: 0;
 position: absolute;
-margin-top: -12px;
+margin-top: -18px;
 font-size: .8rem;
 margin-left: 3px;
 color: silver;
@@ -203,7 +206,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 .links_section{
     color: silver;
-    margin-top: 1rem;
+    margin-top: .5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .links_section a span{

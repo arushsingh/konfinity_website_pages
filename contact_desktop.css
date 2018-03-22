@@ -1,0 +1,60 @@
+body{
+    background-color: #202020;
+    text-align: center;
+}
+.submit button{
+    background-color: #4e86d8;
+}
+.contactform{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative; 
+    width: 60%;
+    margin: 60px auto 0;
+    padding: 10px;
+    background: #202020;
+    height: 34rem; 
+    color: silver;
+}
+.head_placeholder h3{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-left: 4%;
+}
+.contats{
+    list-style-type: none;
+}
+.contats li {
+    margin-bottom: .5rem;
+}
+.imagewrapper img{
+    width: 65%;
+}
+.contats li .answr{
+    width: 65%;
+    height: 1.9rem;
+    border: none;
+    border-radius: 2px;
+    background-color: #202020;
+    border-bottom: 2px solid silver;
+    color: silver;
+    font-size: .8rem;
+}
+.submit button{
+    height: 2rem;
+    width: 40%;
+    margin-left: 6%;
+    border: none;
+    color: silver;
+    font-size: 1rem;
+}
+.contats li .feedback{
+    width: 63%;
+height: 5rem;
+border: none;
+background: #202020;
+color: silver;
+}
+.quest {
+    margin-top: 5px;
+}
