@@ -143,3 +143,106 @@ color: #ec5252;
     padding: 2%;
     margin-top: -6%;
 }
+.require-class h3{
+    color: #ec5252;
+}
+.feedback-section .checked{
+    color: #FFDB58; 
+}
+.feedback-section p {
+    font-size: 4rem;
+padding: 0;
+margin-left: 5%;
+margin-top: -4%;
+margin-bottom: -1%;
+}
+.feedback-section h2{
+    margin-left: 5%;
+    font-size: 1.5rem;
+}
+.feedback-section p span{
+    font-size: 1.2rem;
+}
+.feedback-section .rating-section{
+    margin-left: 6%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.seperator-line{
+    width: 90%;
+    margin-left: 5%;
+}
+.ratingcount-1{
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 2%;
+}
+.rating1-section{
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    margin-top: -5.5%;
+}
+.rating-counter{
+    width: 45%;
+    background-color: silver;
+    height: 1rem;
+}
+.rate-count{
+    width: 90%;
+height: 1rem;
+background-color: #FFDB58;
+}
+.rate-count2{
+    width: 70%;
+}
+.rate-count3{
+    width: 55%;
+}
+.rate-count4{
+    width: 20%;
+}
+.rate-count5{
+    width: 2%;
+}
+.comments p {
+    font-size: .8rem;   
+}
+.comments{
+    width: 90%;
+    margin-left: 1%;
+    margin-top: 5%;
+}
+.name-holder h5{
+    font-size: 1rem;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.name-holder h5 span{
+    margin-left: 3%;
+}
+.name-holder p {
+    margin-top: -6%;
+}
+.button-container{
+    margin-left: 5%;
+    margin-top: 3%;
+    
+}
+.button-container .first-btn{
+    width: 16%;
+border: 1px solid #43f07a;
+height: 1.5rem;
+background-color: #202020;
+color: #43f07a;
+}
+.button-container .secnd-btn{
+    color: #ec5252;
+    border: 1px solid #ec5252;
+}
+.button-container a{
+    margin-left: 2%;
+font-size: .8rem;
+text-decoration: none;
+color: silver;
+}
