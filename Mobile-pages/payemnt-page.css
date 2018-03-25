@@ -1,0 +1,137 @@
+body{
+    background-color: #202020;
+    color: silver;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 'section1';
+}
+.details-navbar{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #ec5252;
+}
+.details-navbar button{
+    height: 2.5rem;
+    width: 15%;
+    border: none;background-color: #ec5252;
+    color: white;
+}
+.details-navbar button svg {
+    margin-left: -29%;
+}
+.details-navbar span{
+    font-size: 1.2rem;
+font-weight: 900;
+color: white;
+position: relative;
+bottom: 5%;
+}
+.details-navbar span svg{
+    margin-right: 2%;
+}
+.details-section{
+    width: 100%;
+    grid-area: section1;
+    box-shadow: 1px 7px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.details-section h2{
+    font-size: 2rem;
+    color: #4e86d8;
+    margin-left: 4%;
+}
+.email-holder{
+    position: absolute;
+    margin-top: -6%;
+    font-size: 1rem;
+    margin-left: 4.5%;
+}
+.number-holder{
+    font-size: .8rem;
+    margin-left: 4%;
+}
+.details-edit{
+    width: 90%;
+border: none;
+height: 2rem;
+margin-top: 4%;
+color: white;
+font-size: 1rem;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: #FFDB58;
+margin-left: 5%;
+margin-bottom: 3%;
+}
+.product-specs{
+    display: flex;
+    box-shadow: 1px 7px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 100%;
+}
+.product-container{
+margin-left: 3%;
+}
+.product-container h3{
+font-size: 1.4rem;
+}
+.price-container span{
+font-size: 1.3rem;
+margin-left: 3%;
+}
+.coup_container input{
+    margin-top: 30%;
+margin-left:-60%;
+border: none;
+height: 1.7rem;
+border-radius: 4%;
+}
+.price-reducer  button{
+    margin-top: 7.3rem;
+border: none;
+height: 1.8rem;
+border-radius: 2%;
+background-color: #202020;
+border: 1px solid #FFDB58;
+width: 100%;
+font-size: .9rem;
+color: #FFDB58;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.price-section{
+    width: 100%;
+    margin-left: 3%;
+}
+.price-container{
+    display: flex;
+}
+.price-section h3{
+    font-size: 1.3rem;
+}
+.name-display ul{
+margin-left: -20%;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+.name-display ul li{
+    margin-bottom: 2%;
+}
+.data-display ul{
+list-style-type: none;
+}
+.data-entry{
+    border:none;
+    margin-bottom: 7%;
+    height: 1.2rem;
+    border-radius: 4%;
+}
+.submit-pay-now button{
+    width: 100%;
+height: 3rem;
+font-size: 1.3rem;
+background-color: #ec5252;
+color: white;
+border:none;
+}
