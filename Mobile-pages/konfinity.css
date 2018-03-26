@@ -10,7 +10,12 @@ body{
 .logo-brand-container{
     height: 3rem;
 }
-.navbar{display: grid; 
+.navbar{display: grid;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #202020; 
     grid-template-columns: 1fr 2fr 1fr;
     height: 3rem;}
     .logo-brand-container h5{
@@ -256,6 +261,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     overflow-x: hidden;
     transition: .7s;
     padding-top: 60px;
+    margin-top: 10%;
 }
 .sidenav a {
     padding: 8px 8px 8px 32px;
