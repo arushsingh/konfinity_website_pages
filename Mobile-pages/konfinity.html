@@ -7,12 +7,31 @@
     <link type="text/css" rel="stylesheet" href="./konfinity.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <title>KONFINITY</title>
+    <script type="text/javascript">
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "50%";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+    </script>
 </head>
 <body>
     <div class="maincontainer">
+                  <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy & Disclaimer</a>
+                    <a href="#">Contact</a>
+                  </div>
       <div class="navbar">
-          <div class="logo"><img src="./images/konfinity-admin-logo.svg"/></div>
-         <div class="join"><button>JOIN&nbsp;<span>KONFINITY</span></button></div>
+          <div class="logo"><button onclick="openNav()"><i class="fas fa-bars"></i></button></div>
+          <div class="logo-brand-container"><div class="brand-inner"><img src="./images/konfinity-admin-logo.svg"/><h5>KON<span>FINITY</span></h5></div></div>
+         <div class="join"><button>JOIN <span>US</span></button></div>
       </div>
       <div class="bannerimg">
         <img src="./images/banner_home.png.jpeg"/>
