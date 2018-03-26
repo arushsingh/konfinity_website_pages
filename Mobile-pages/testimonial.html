@@ -7,27 +7,75 @@
     <link type="text/css" rel="stylesheet" href="./testimonial.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <title>Testimonials</title>
+    <script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}    
+    </script>
 </head>
 <body>
-<div class="head_container">
-    <h2>KON<span class="brand">FINITY</span> STUDENTS <span class="2ndline">TESTIMONIALS</span></h2>
-</div>
 
-<div class="gridcontainer">
-<div class="imagecontainer">
-     <img src="./images/gabriel-lopez-389225-unsplash.jpg"/>
-</div>    
-<div class="imageheader">
-    <p>lorem ipsum</p>
-    <spam>lorem ipsum</spam>
-</div>
-<div class="content_section">
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum obcaecati expedita, perferendis, officiis voluptate illo fugiat, eligendi nemo recusandae dolor dolorum nobis beatae unde officia eius iusto non? Magni cum, accusamus sint iste porro tenetur ab aliquid dolorem reiciendis consectetur rerum fugit deserunt, explicabo exercitationem. Voluptas corrupti fugit nemo natus dolor, quam quisquam saepe temporibus id nostrum nobis hic commodi!</p>
-</div>
-</div>
-<div class="buttoncontainer">
-    <button class="leftarrow"><i class="fas fa-arrow-left"></i></button>
-    <button class="rightarrow leftarrow"><i class="fas fa-arrow-right"></i></button>
+        <div class="slideshow-container">
+
+                <div class="mySlides">
+                  <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius saepe reiciendis amet voluptatem impedit praesentium rerum recusandae sit, alias perferendis, reprehenderit, laborum ipsum quod maxime qui repellat? Ullam, sequi.</q>
+                  <p class="author">- Kamal Pandey</p>
+                  <img src="./images/student-testimonials@1x.png"/>
+                </div>
+                
+                <div class="mySlides">
+                  <q>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo delectus tempora ipsam est esse ab, harum architecto perferendis velit dolor quibusdam odio inventore exercitationem repellat nemo deserunt, iste id. Reiciendis.</q>
+                  <p class="author">- Kamal Pandey</p>
+                  <img src="./images/student-testimonials@1x.png"/>
+                </div>
+                
+                <div class="mySlides">
+                  <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae libero quasi quia commodi consequuntur cupiditate vitae accusamus qui assumenda maiores voluptatibus, itaque hic quibusdam aut quas asperiores fuga animi. Ratione.</q>
+                  <p class="author">- Kamal Pandey</p>
+                  <img src="./images/student-testimonials@1x.png"/>
+                </div>
+
+                <div class="mySlides">
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae libero quasi quia commodi consequuntur cupiditate vitae accusamus qui assumenda maiores voluptatibus, itaque hic quibusdam aut quas asperiores fuga animi. Ratione.</q>
+                        <p class="author">- Kamal Pandey</p>
+                        <img src="./images/student-testimonials@1x.png"/>
+                      </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
 </div>
 </body>
 </html>

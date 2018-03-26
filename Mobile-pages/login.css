@@ -25,6 +25,8 @@ li,ul,body,input{
     display:table; 
     clear:both;
 }
+
+
 .form-header label{
     display:block; 
     cursor:pointer; 
