@@ -2,294 +2,209 @@ body{
     background-color: #202020;
     margin: 0;
     padding: 0;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.logo{
-    height: 3rem;
-}
-.logo-brand-container{
-    height: 3rem;
-}
-.navbar{display: grid;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    background-color: #202020; 
+.navbar {
+    display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    height: 3rem;}
-    .logo-brand-container h5{
-        adding: 0;
-width: 62%;
-position: relative;
-margin-top: -13.5%;
-margin-left: 30%;
-font-size: 1rem;
-color: silver;
-    }
-.brand-inner{
-        margin-top: 4%;
+    grid-template-areas: ' bar logo join';
+    height: 3rem;
 }
-.logo i {
-        font-size: 1.7rem;
-color: silver;
-        margin: .5rem;
-    }
-.logo-brand-container img{width: 18%;margin-left:10%;}
-.join button{
-padding: 0;
-    margin: .4rem;
-    float: right;
-    font-weight: 900;
-    border: none;
-    height: 2rem;
-    background-color: #212121;
-    color: silver;
-    font-size: .8rem;
-    width: 63%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.student .stud_overlay{
-    position: absolute;
-    color: silver;
-    width: 75%;
-    margin-top:10%;
-    text-align: center;
-    margin-left: 9%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.student .stud_overlay h3{
-    font-size: 1.8rem;
-    color: #4e86d8;
-}
-.student .stud_overlay .view{
-    width: 56%;
-    border: none;
-    height: 1.5rem;
-    background: none;
-    color: #4e86d8;
-    font-size: 1rem;
-}
-.bannerimg{
-    text-align: center;
-}
-.join button span{color:#4e86d8;}
-.bannerimg img{width: 100%;
-opacity: .5;
-}
-.overlay{
-    position: absolute;
-bottom: 68%;
-color: white;
-width: 80%;
-margin-left: 10%;
-height: 8rem;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.overlay h2 span{
-    color:#4e86d8;
-}
-.overlay .text_high{
-    color: #4e86d8;
-    margin-left: 5%;
-}
-.overlay h2{
-    margin-left: 5%;
-}
-.primarycon span{
-    color:#4e86d8;
-}
-.bannerimg .suppcontent{
-    position: absolute;
-    top: 25%;
-    color: silver;
-    width: 80%;
-    margin-left: 10%;
-    font-size: 1rem;
-}
-.bannerimg .suppcontent span{
-    color:#4e86d8;
-    margin-left: 25%;
-    font-size: 1rem; 
-}
-.logo button{
-    background-color: #202020;
-    border:none;
-    color: #FFDB58;
-}
-.section2 h4{
-    text-align: center;
-    color: silver;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.8rem;
-    position: relative;
-    top: .5rem;
-    color: #FFDB58;
-}
-.section2 {
-    width: 90%;
-    margin-left: 5%;
-    background-color:#202020;
-    }
-.sectionplaceholder{
-    width: 92%; 
-    margin-left: 4%;
-    color: silver;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  }
-.sectionplaceholder button{
-    width: 100%;
-    background-color: #212121;
-    height: 2rem;
-    border: none;
-    font-size: 1rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: silver; 
-}
-.sectionplaceholder h3{
-    position: relative;
-    top: .6rem;
-    font-size: 1.2rem;
-    color: #4e86d8;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.sectionplaceholder p{
-    font-size: .9rem;
-    margin-left: .3rem;
-}
-.student img{
-    width: 90%;
-margin-left: 5%;
-margin-top: .5rem;
-}
-.student .industry{
-    margin-top: 14%;
-}
-.student .industry h3{
-font-size: 1.5rem;
-}
-.student .mentor h3{
-    font-size: 1.5rem;
-}
-.usp h3{
-    text-align: center;
-color: silver;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-size: 1.8rem;
-position: relative;
-top: .5rem;
-color: #FFDB58;
-}
-.overlay_teach H3{
-    color: #4e86d8;
-}
-.usp .prod_dev h3{
-    font-size: 1.6  rem;
-}
-.usp .student img{
-    opacity: .2;
-    z-index: 0;
-}
-.student .overlay_teach{
-    width: 71%;
-margin-left: 12%;
-position: absolute;
-margin-top: 8%;
-color: silver;
-text-align: center;
-z-index: 1;
-}
-.overlay_teach button{
-    height: 2rem;
-border: none;
-border-radius: 5px;
-background: no-repeat;
-color: #4e86d8;
-font-size: 1rem;
-box-shadow: 0 1px 3px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.5);
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.footer_header{
-    display: flex;
-    margin-top: 1rem;
-    color: silver;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.image_container{
-    width: 10%;
-    margin-left: .8rem;
+.bar-menu {
+    grid-area: bar;
 }
 .brand{
-    margin-top: 2px;
-    margin-left: .5rem;
+    display: grid;
+    margin-left: -2%;
+    grid-area: logo;
+}
+.join-us{
+    grid-area: join;
+}
+.bar-menu button{
+    width: 2rem;
+height: 3rem;
+border: none;
+background-color: #202020;
+color: white;
+font-size: 1.5rem;
+padding: 0;
+margin-left: 3%;
+}
+.brand img{
+width: 2rem;
+margin-top: 6%;
+margin-left: 7%;
 }
 .brand span{
-  color: #4e86d8;  
+    font-size: 1.1rem;
+margin-left: 26%;
+margin-top: -15%;
 }
-.copyright{
-    color: silver;
-    margin-left: .9rem;
-    margin-top: .3rem;
+.join-us button{
+    width: 6rem;
+height: 3rem;
+border: none;
+background-color: #202020;
+font-size: 1rem;
+color: white;
+margin-left: 5%;
 }
-.linksection ul{
-    list-style-type: none;
+.join-us button span{
+    color:#4e86d8;
+}
+/* start of hero section */
+.herosection{
+    width: 100%; 
+    height: 14rem;
+    background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.top-left{
+        position: absolute;
+        top: 3%;
+        left: 2%;
+}
+.top-left button{
+    height: 2rem;
+border: none;
+background: transparent;
+box-shadow: 0px 1px 2px black;
+color: white;
+font-size: .7rem;
+}
+.top-left h2{
+    font-size: 2.5rem;
+}
+.top-left p {
+    font-size: .9rem;
+    padding: .3rem;
+    margin-top: -9%;   
+}
+/* start of the courses section */
+.courses-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'one two'
+    'three four';
+    background-color: white;
+}
+.section1{
+grid-area: one;
+text-align: center;
+border-right: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+margin-top: 2%;
+}
+.section2{
+    grid-area: two;
+    margin-top: 2%;
+    text-align: center;
+    border-right: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+
+}
+.section3{
+    margin-top: 2%;
+    grid-area: three;
+    text-align: center;
+    border-right: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+
+}
+.section4{
+    margin-top: 2%;
+    grid-area: four;
+    text-align: center;
+    border-right: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+
+}
+.pillar-image i {
+    font-size: 5rem;
+padding: .2rem;
+    color: #F0DB4F; 
+}
+.section1 a {
+    text-decoration: none;
+    color: black;
+}
+.sect a{
+    text-decoration: none;
+}
+.pillar-tile{
+    align-items: center;
+    color: #222;
     display: flex;
-    color: silver;
-    margin: 0;
-    padding:0;
-    margin-left: .9rem;
-    margin-top: .3rem;
+    font-size: 16px;
+    font-weight: 700;
+    hyphens: none;
+    justify-content: center;
+    line-height: 20px;
+    letter-spacing: -.025em;
+    min-height: 40px;
+    padding: 0 10px;
 }
-.linksection ul li a {
-    color: #4e86d8;
-    text-decoration: none;
+.pillar-meta {
+    color: #888;
+font-size: 12px;
+font-weight: 500;
+line-height: 20px;
 }
-.linksection ul li {
-    margin-right: .5rem;
-    
+.pillar-image2 i {
+    color: #61dafb;
 }
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #202020;
-    overflow-x: hidden;
-    transition: .7s;
-    padding-top: 60px;
-    margin-top: 10%;
+.pillar-image3 i {
+    color: #E44D26;
 }
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 1rem;
-    color: silver;
+.pillar-image4 i {
+    color: #026e00;
+}
+/* start of the design devlop and deploy section */
+/* Style the tab */
+.tab {
+    float: left;
+    background-color: white;
+    width: 25%;
+    height: 18rem;
+    border-radius: 10%;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
     display: block;
+    background-color: inherit;
+    color: whitesmoke;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
     transition: 0.3s;
+    font-size: 1.5rem;
+    height: 6rem;
 }
-.sidenav a:hover {
-    color: #f1f1f1;
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
 }
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #4e86d8;
 }
-@media only screen and (max-width:320px){
-    .bannerimg .primarycon{
-        width: 75%;
-        font-size: 1.5rem;
-        left: 21%;
-    }
-    .bannerimg .suppcontent{
-        width: 90%;
-        margin-left: 10%;
-        font-size: .8rem;
-    }
+
+/* Style the tab content */
+.tabcontent {
+    float: right;
+    padding: .5rem;
+    
+    width: 65%;
+    border-left: none;
+    height: 300px;
 }
