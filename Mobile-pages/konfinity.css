@@ -5,6 +5,7 @@ body{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .navbar {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -57,7 +58,7 @@ margin-left: 5%;
 /* start of hero section */
 .herosection{
     width: 100%; 
-    height: 14rem;
+    height: 16rem;
     background: #bdc3c7;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -166,11 +167,21 @@ line-height: 20px;
 /* Style the tab */
 .tab {
     float: left;
-    background-color: white;
-    width: 25%;
+    background-color: #202020;
+    width: 20%;
     height: 18rem;
-    border-radius: 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 3%;
 
+}
+.advantage-section h1{
+    text-align: center;
+    font-size: 1.7rem;
+}
+.support-content {
+    text-align: center;
+    width: 90%;
+margin-left: 5%;
 }
 
 /* Style the buttons inside the tab */
@@ -187,6 +198,7 @@ line-height: 20px;
     transition: 0.3s;
     font-size: 1.5rem;
     height: 6rem;
+    border-radius: 3%;
 }
 
 /* Change background color of buttons on hover */
@@ -201,10 +213,13 @@ line-height: 20px;
 
 /* Style the tab content */
 .tabcontent {
-    float: right;
-    padding: .5rem;
-    
-    width: 65%;
+    float: right;  
+    width: 76%;
     border-left: none;
     height: 300px;
 }
+.tabcontent p {
+    margin-right: 5%;
+}
+/* testimonial section */
+/* Slideshow container */
