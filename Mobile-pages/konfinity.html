@@ -7,31 +7,20 @@
     <link type="text/css" rel="stylesheet" href="./konfinity.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <title>KONFINITY</title>
-    <script type="text/javascript">
-    function openCity(evt, cityName) {
-    var i = 0, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-//document.addEventListener("DOMContentLoaded", function openCity(evt, cityName) {
-//    console.log("DOM fully loaded and parsed");
- // });
-    </script>
+    <script src="./advantage.js"></script>
+    <script src="./sidemenu.js"></script>
 </head>
 <body>
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+                <a href="#">lorem</a>
+              </div>
    <div class="navbar">
 <div class="bar-menu">
-        <button><i class="fas fa-align-center"></i></button>
+        <button onclick="openNav()"><i class="fas fa-align-center"></i></button>
 </div>
 <div class="brand">
 <img src="./images/konfinity-admin-logo.svg"/>
