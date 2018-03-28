@@ -216,10 +216,39 @@ margin-left: 5%;
     float: right;  
     width: 76%;
     border-left: none;
-    height: 300px;
+    height: 256px;
 }
 .tabcontent p {
     margin-right: 5%;
 }
-/* testimonial section */
-/* Slideshow container */
+/* usp-section */
+.usp-section {
+    margin-top: 81%;
+    background-color: white;
+    color: #2c3e50;
+    text-align: center;
+}
+.usp-section h2{
+    font-weight: bold;
+    padding-top: 5%;
+}
+.bulb-holder{
+    height: 5rem;
+width: 5rem;
+background-color: white;
+border-radius: 50%;
+text-align: center;
+box-shadow: 0px 1px 15px #2c3e50;
+margin-left: 38%;
+}
+.bulb-holder i {
+    font-size: 3rem;
+margin-top: 16%;
+margin-left: 5%;
+}
+.sub-section1 h3{
+    font-size: 1.5rem;
+}
+.sub-section1 {
+    margin-top: 3%;
+}
