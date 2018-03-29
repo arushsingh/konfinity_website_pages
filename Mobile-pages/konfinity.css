@@ -10,11 +10,12 @@ body{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: ' bar logo join';
-    height: 3rem;
+    height: 4rem;
     overflow: hidden;
     position: fixed;
-    background-color: #202020;
+    background-color:rgba(0, 0, 0, .5);
     z-index: 999;
+    width: 100%;
 }
 .bar-menu {
     grid-area: bar;
@@ -29,47 +30,53 @@ body{
 }
 .bar-menu button{
     width: 2rem;
-height: 3rem;
+height: 4rem;
 border: none;
-background-color: #202020;
+background-color:rgba(0, 0, 0, 0);
 color: white;
 font-size: 1.5rem;
-padding: 0;
+padding-left: .5rem;
 margin-left: 3%;
 }
+
 .brand img{
-width: 2rem;
-margin-top: 6%;
+width: 2.5rem;
+margin-top: 10%;
 margin-left: 7%;
 }
 .brand span{
     font-size: 1.1rem;
-margin-left: 26%;
-margin-top: -15%;
+margin-left: 30%;
+margin-top: -17%;
 }
 .join-us button{
-    width: 6rem;
-height: 3rem;
+    width: 5rem;
+height: 2rem;
 border: none;
-background-color: #202020;
+background-color: rgba(0, 0, 0, 0);
 font-size: 1rem;
+line-height: 1.2rem;
 color: white;
-margin-left: 5%;
+background-color: #E44D26;
+margin-top: 1rem;
+border-radius: 3%;
+margin-left: .5rem;
 }
 .join-us button span{
-    color:#4e86d8;
+    color:white;
 }
 /* start of hero section */
 .herosection{
     width: 100%; 
-    height: 18rem;
-    background: #bdc3c7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 20rem;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 .top-left{
         position: absolute;
-        top: 3%;
+        top: 7%;
         left: 2%;
 }
 .top-left button{
@@ -227,7 +234,6 @@ margin-left: 5%;
 }
 /* usp-section */
 .usp-section {
-    margin-top: 81.6%;
     background-color: white;
     color: #2c3e50;
     text-align: center;
@@ -305,3 +311,167 @@ margin-left: 5%;
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 } 
+
+/* testimonial section-css */
+.testi-sub1{
+    text-align: center;
+    line-height: 1.3rem;
+}
+.testi-sub1 p {
+    padding: .5rem;
+}
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'area-1 area-2'
+    'area-3 area-4';
+grid-gap: .5rem;
+}
+.testi-images{
+    width:100%;
+}
+.area-1{
+grid-area: area-1;
+}
+.area-2{
+    grid-area: area-2;
+}
+.area-3{
+    grid-area: area-3;
+}
+.area-4{
+    grid-area: area-4;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #202020;
+  }
+
+  .content h2{
+      margin:0;
+      padding:0;
+      margin-top: -1rem;
+      margin-bottom: 7px;
+  }
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #202020;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: #FFDB58;}
+  .slideshow-container h2{
+      text-align: center;
+      font-size: 2rem;
+  }
+
+  /* demo css */
+.button-container{
+display: grid;
+width: 18%;
+}
+.works{
+    text-align: center;
+    margin: 0;
+    padding:0;
+    height: 19rem;
+    
+}
+.btn span{
+    color: white;
+}
+  .btn{
+    width: 90%;
+    height:4.5rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .btn i {
+       margin-left: -5px;
+  }
+  .btn.active i {
+      margin-left: -5px;
+  }
+  .btn.active{
+    width: 90%;
+    height: 4.5rem;
+    background: #4e86d8;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .content{
+    padding: 1rem;
+    color: white;
+    display: none;
+    position: relative;
+    margin-top: -55%;
+    padding-bottom: .5rem;
+  }
+  .content.visible{
+    display: block;
+    width: 74%;
+    float: right;
+    position: relative;
+    margin-top: -55%;
+  }
