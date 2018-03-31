@@ -58,7 +58,6 @@ margin-top: -17%;
 .join-us button{
     width: 5rem;
 height: 2rem;
-border: var(-b-none);
 background-color: rgba(0, 0, 0, 0);
 font-size: 1rem;
 line-height: 1.2rem;
@@ -67,6 +66,7 @@ background-color: #E44D26;
 margin-top: 1rem;
 border-radius: 3%;
 margin-left: .5rem;
+border: none;
 }
 .join-us button span{
     color:var(--white);
@@ -91,7 +91,9 @@ border: none;
 background:var(--orange);
 box-shadow: 0px 1px 2px var(--black);
 color: white;
-font-size: .7rem;
+margin-left: 5px;
+font-size: .8rem;
+font-weight: 900;
 }
 .top-left h2{
     font-size: 2.5rem;
@@ -304,8 +306,8 @@ margin-left: 5%;
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 2rem;
-    font-size: 36px;
+    right: 9rem;
+    font-size: 2rem;
     margin-left: 50px;
 }
 
@@ -511,11 +513,22 @@ box-shadow: 3px 1px 16px 6px rgba(0,0,0,0.3);
      -webkit-box-shadow: 3px 1px 16px 6px rgba(0,0,0,0.3);
 -moz-box-shadow: 3px 1px 16px 6px rgba(0,0,0,0.3);
 box-shadow: 3px 1px 16px 6px rgba(0,0,0,0.3);
-margin-right: .8rem;
+margin-right: .6rem;
 }
 .content.visible {
     display: block;
+    -webkit-animation: typing .2s,blink-caret .5s step-end infinite alternate;
 }
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+
+
+
+
+
+
+
 .content{
     display: none;
 }
