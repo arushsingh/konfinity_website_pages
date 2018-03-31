@@ -5,7 +5,12 @@ body{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+/* how it works */
+.works-1{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+ 
 .navbar {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -82,7 +87,7 @@ margin-left: .5rem;
 .top-left button{
     height: 2rem;
 border: none;
-background: transparent;
+background: #E44D26;
 box-shadow: 0px 1px 2px black;
 color: white;
 font-size: .7rem;
@@ -116,7 +121,6 @@ margin-top: 2%;
     text-align: center;
     border-right: 1px solid #ddd;
 border-bottom: 1px solid #ddd;
-
 }
 .section3{
     margin-top: 2%;
@@ -124,7 +128,6 @@ border-bottom: 1px solid #ddd;
     text-align: center;
     border-right: 1px solid #ddd;
 border-bottom: 1px solid #ddd;
-
 }
 .section4{
     margin-top: 2%;
@@ -132,16 +135,21 @@ border-bottom: 1px solid #ddd;
     text-align: center;
     border-right: 1px solid #ddd;
 border-bottom: 1px solid #ddd;
-
 }
 .pillar-image i {
-    font-size: 5rem;
-padding: .2rem;
+    font-size: 3rem;
+padding: 1.2rem;
     color: #F0DB4F; 
 }
 .section1 a {
     text-decoration: none;
     color: black;
+}
+.sub-section1 p {
+    margin: 1rem;
+}
+.sub-section1 img  {
+     width: 90%;
 }
 .sect a{
     text-decoration: none;
@@ -295,7 +303,7 @@ margin-left: 5%;
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 2rem;
     font-size: 36px;
     margin-left: 50px;
 }
@@ -423,58 +431,6 @@ grid-area: area-1;
       text-align: center;
       font-size: 2rem;
   }
-
-  /* demo css */
-.button-container{
-display: grid;
-width: 18%;
-}
-.works{
-    text-align: center;
-    margin: 0;
-    padding:0;
-    height: 19rem;
-    
-}
-.btn span{
-    color: white;
-}
-  .btn{
-    width: 90%;
-    height:4.5rem;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-  }
-  .btn i {
-       margin-left: -5px;
-  }
-  .btn.active i {
-      margin-left: -5px;
-  }
-  .btn.active{
-    width: 90%;
-    height: 4.5rem;
-    background: #4e86d8;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-  }
-  .content{
-    padding: 1rem;
-    color: white;
-    display: none;
-    position: relative;
-    margin-top: -55%;
-    padding-bottom: .5rem;
-  }
-  .content.visible{
-    display: block;
-    width: 74%;
-    float: right;
-    position: relative;
-    margin-top: -55%;
-  }
   /* footer section */
   .social-bar {
         text-align: center;
@@ -484,7 +440,7 @@ width: 18%;
       padding: .5rem;
   }
   .faceb{
-      color: #3B5998;
+      color: white;
   }
   .youtu{
       color: #FF0000;
@@ -516,4 +472,45 @@ width: 18%;
     position: absolute;
     margin-top: .5%;
     font-size: 1rem;
+}
+.last-section {
+     padding-bottom: 1.5rem;
+}
+/* works container */
+.works-container {
+     padding-bottom: 1rem;
+}
+.button-container {
+     display: inline-grid;
+     width: 13%;
+     height: 17rem;
+}
+.btn {
+     border: none;
+     background: none;
+     background-color: #202020;
+     color: white;
+     -webkit-box-shadow: 3px 1px 16px 6px rgba(0,0,0,0.3);
+-moz-box-shadow: 3px 1px 16px 6px rgba(0,0,0,0.3);
+box-shadow: 3px 1px 16px 6px rgba(0,0,0,0.3);
+}
+.btn.active{
+    background-color: #4e86d8;
+}
+.content-container {
+     width: 80%;
+     float: right;
+     margin-top: -72.5%;
+     text-align: center;
+     height: 17rem;
+     -webkit-box-shadow: 3px 1px 16px 6px rgba(0,0,0,0.3);
+-moz-box-shadow: 3px 1px 16px 6px rgba(0,0,0,0.3);
+box-shadow: 3px 1px 16px 6px rgba(0,0,0,0.3);
+margin-right: 1rem;
+}
+.content.visible {
+    display: block;
+}
+.content{
+    display: none;
 }
