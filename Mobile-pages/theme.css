@@ -1,3 +1,4 @@
+*{box-sizing: border-box;}
 :root{
 --background:#202020;
 --mustard:#FFDB58;
@@ -11,19 +12,26 @@
 --paddr:padding-right:1rem;
 --paddl:padding-left:1rem;
 --padd:padding:1rem;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.btn.large{
+width: 5rem;
+}
+.btn.accent{
+    background-color: #4e86d8;
+}
+h1{
+    font-size: 2.9rem;
+    line-height: 3.2rem;
+}
+h2{
+     line-height: 3.2rem;
+     font-size: 1.9rem;
+}
+h3{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+p{
+    font-size: 1rem;
+    line-height: 1.2rem;
 }

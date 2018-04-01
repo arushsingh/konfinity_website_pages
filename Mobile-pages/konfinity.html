@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="./reset.css">
     <link type="text/css" rel="stylesheet" href="./theme.css">
     <link type="text/css" rel="stylesheet" href="./konfinity.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
@@ -19,7 +20,7 @@
               </div>
    <div class="navbar">
 <div class="bar-menu">
-        <button onclick="openNav()"><i class="fas fa-bars"></i></button>
+        <button  onclick="openNav()"><i class="fas fa-bars"></i></button>
 </div>
 <div class="brand">
 <img src="./images/konfinity-admin-logo.svg"/>
@@ -31,7 +32,7 @@
    </div>
 <div class="herosection">
       <div class="top-left"> 
-          <h2>Master Tech Build Future</h2>
+          <h1>Master Tech Build Future</h1>
           <p>Boost your employability skills by working on full stack application projects using modern web technologies. Come as a newbie and start your exciting  journey to become a web ninja</p>
           <button>JOIN KONFINITY</button>
       </div>
@@ -105,28 +106,40 @@
 </div>
 <section class="works-container">
 <div class="button-container">
-<button id="btn1" class ="btn" data-id=0 ><i class="fas fa-pencil-alt fa-2x"></i></button>
-<button id="btn2" class ="btn" data-id=1><i class="fas fa-cogs fa-2x"></i></button>
-<button id="btn3" class ="btn" data-id=2><i class="fas fa-cloud fa-2x"></i></button>
+<button id="btn1" class ="btn" data-id=0 onclick="headOn1()" ><i class="fas fa-pencil-alt "></i></button>
+<button id="btn2" class ="btn" data-id=1 onclick="headOn2()" ><i class="fas fa-cogs "></i></button>
+<button id="btn3" class ="btn" data-id=2 onclick="headOn3()" ><i class="fas fa-cloud "></i></button>
 </div>
 <div class="content-placeholder">
 <div class="content-container content" id="content1">
-<h3>DESIGN</h3>
+    <div class="header-container">
+            <h3 id="header">DESIGN</h3>
+    </div>
+    <div class="content2-container">
 <p>Design is not just what it looks like and feels like, Design is how it works”
         Explore the art of crafting beautiful and slick tech products with Responsive Web Design.
         Learn design components like content, UI,UX, SEO, Philosophy of Fluid and Material Designs</p>
-</div>
+    </div>
+    </div>
 
 <div class="content-container content" id="content2">
-        <h3>DEVLOP</h3>
+        <div class="header-container">
+                <h3 id="header1">DEVLOP</h3>
+        </div>
+        <div class="content2-container">
         <p>Transform Ideas into products using  Javascript as base. 
                 Create superfast real time applications using functional and event based programming.</p>
-        </div>
+            </div>
+            </div>
         
         <div class="content-container content" id="content3">
-                <h3>DEPLOY</h3>
+                <div class="header-container">
+                        <h3 id="header2">DEPLOY</h3>
+                </div>
+                <div class="content2-container">
                 <p>Launch your application on Linux based hosting on Amazon Cloud services. 
                         Your application is ready to conquer the world!</p>
+                    </div>
                 </div>
           
 </div>
@@ -188,31 +201,31 @@
 <div class="slideshow-container">
     <h2>Testimonials</h2>
         <div class="mySlides">
-          <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius saepe reiciendis amet voluptatem impedit praesentium rerum recusandae sit, alias perferendis, reprehenderit, laborum ipsum quod maxime qui repellat? Ullam, sequi.</q>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium placeat cupiditate necessitatibus sit quia distinctio natus, ut tenetur quaerat ipsum aut esse fugiat rerum cumque ducimus, voluptates quam rem aliquid.</p>
           <p class="author">- Kamal Pandey</p>
           <img src="./images/student-testimonials@1x.png"/>
         </div>
         
         <div class="mySlides">
-          <q>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo delectus tempora ipsam est esse ab, harum architecto perferendis velit dolor quibusdam odio inventore exercitationem repellat nemo deserunt, iste id. Reiciendis.</q>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus atque, at impedit tempora ratione adipisci iusto molestias sequi, aperiam dignissimos dolor sed expedita itaque, asperiores ad. Eius aperiam eveniet dolorem.</p>
           <p class="author">- Kamal Pandey</p>
           <img src="./images/student-testimonials@1x.png"/>
         </div>
         
         <div class="mySlides">
-          <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae libero quasi quia commodi consequuntur cupiditate vitae accusamus qui assumenda maiores voluptatibus, itaque hic quibusdam aut quas asperiores fuga animi. Ratione.</q>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque, possimus libero nesciunt illo pariatur beatae magnam animi praesentium consectetur dolor, minima voluptas dolorum, nihil porro voluptatem voluptate unde obcaecati.</p>
           <p class="author">- Kamal Pandey</p>
           <img src="./images/student-testimonials@1x.png"/>
         </div>
 
         <div class="mySlides">
-                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae libero quasi quia commodi consequuntur cupiditate vitae accusamus qui assumenda maiores voluptatibus, itaque hic quibusdam aut quas asperiores fuga animi. Ratione.</q>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed aspernatur, dicta eum maiores officia! Quis distinctio, ratione quia odio ipsa ea totam provident aspernatur commodi reiciendis cum. Rem, dolor!</p>
                 <p class="author">- Kamal Pandey</p>
                 <img src="./images/student-testimonials@1x.png"/>
               </div>
 
               <div class="mySlides">
-                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae libero quasi quia commodi consequuntur cupiditate vitae accusamus qui assumenda maiores voluptatibus, itaque hic quibusdam aut quas asperiores fuga animi. Ratione.</q>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quis quisquam, quae voluptas aliquid cumque iste! Cumque fuga aspernatur eligendi. Quidem totam quod rerum quo reprehenderit ex aliquid, recusandae itaque.</p>
                     <p class="author">- Kamal Pandey</p>
                     <img src="./images/student-testimonials@1x.png"/>
                   </div>
@@ -256,6 +269,7 @@
 <script src="./sidemenu.js"></script>
     <script src="./testimonial.js"></script>
     <script src="./advantage.js"></script>
+    <script src="./text-decoration.js"></script>
     <script type="text/javascript"> 
     window.onload= function () {
   window.scrollTo(0, 0);
