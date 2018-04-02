@@ -1,4 +1,5 @@
 body{
+    color: white;
     background-color: #202020;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -32,7 +33,6 @@ li,ul,body,input{
     cursor:pointer; 
     z-index:999;
     background-color: #202020;
-    color: silver;
     box-shadow: 0 1px 3px rgba(0,0,0,0), 0 1px 8px rgba(0,0,0,.5);
 }
 .header ul{
@@ -49,7 +49,6 @@ top: 4rem;
     position: relative;
 font-size: 2rem;
 left: .5rem;
-color: silver;
 }
 /*Adi  */
 .form-header li{
@@ -62,7 +61,6 @@ color: silver;
     float:left; 
     transition:all 600ms ease;
 }
-/*Adi  */
 /*sectiop*/
 .section-out{
     width:700px; 
