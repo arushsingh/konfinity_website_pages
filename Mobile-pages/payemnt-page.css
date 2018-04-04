@@ -1,22 +1,20 @@
 body{
     background-color: #202020;
-    color: silver;
+    color: white;
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.grid{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 'section1';
-}
+/* navigation bar */
 .details-navbar{
     width: 100%;
-    height: 2.5rem;
+    height: 3.5rem;
+    overflow: hidden;
+    position: fixed;
     background-color: #ec5252;
 }
 .details-navbar button{
-    height: 2.5rem;
+    height: 3.5rem;
     width: 15%;
     border: none;background-color: #ec5252;
     color: white;
@@ -34,104 +32,90 @@ bottom: 5%;
 .details-navbar span svg{
     margin-right: 2%;
 }
-.details-section{
+/* details section */
+.details-section {
+     padding-top: 2.9rem;
+     padding-bottom: .5rem;
+     width: 95%;
+margin-left: 2.5%;
+box-shadow: 0 5px 4px rgba(0,0,0,0.12), 0 3px 9px rgba(0,0,0,0.24);
+}
+.details-section ul li {
+    padding: .3rem .5rem .5rem .5rem;
+}
+.details-section ul li:nth-child(1){
+    color: var(--brandclr);
+}
+.details-section ul li button{
     width: 100%;
-    grid-area: section1;
-    box-shadow: 1px 7px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.details-section h2{
-    font-size: 2rem;
-    color: #4e86d8;
-    margin-left: 4%;
-}
-.email-holder{
-    position: absolute;
-    margin-top: -6%;
-    font-size: 1rem;
-    margin-left: 4.5%;
-}
-.number-holder{
-    font-size: .8rem;
-    margin-left: 4%;
-}
-.details-edit{
-    width: 90%;
 border: none;
-height: 2rem;
-margin-top: 4%;
+height: 2.5rem;
 color: white;
+margin-top: 0%;
 font-size: 1rem;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-background-color: #FFDB58;
-margin-left: 5%;
-margin-bottom: 3%;
+background-color:#ec5252; 
 }
-.product-specs{
-    display: flex;
-    box-shadow: 1px 7px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+/* amt-confirmation */
+.amt-confirmation {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 3%;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.12), 0 3px 9px rgba(0,0,0,0.24);
+}
+.amt-confirmation ul li {
+    padding: 0rem .5rem .5rem .5rem;
+    padding-top: .2rem;
+}
+.coupon-container{
+    border: none;
+height: 2rem;
+border-radius: 3%;
+}
+.amt-confirmation ul li button{
+    border :1px solid var(--mustard);
+    color: var(--mustard);
+    height: 2rem;
+    width: 40%;
+    float: right;
+    margin-top: -12.5%; 
+}
+/* end of amt--confirmation container */
+/* statr of the confirmation container */
+.confirmation-container{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 3%;
+    padding:.3rem;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.12), 0 3px 9px rgba(0,0,0,0.24);
+}
+.section1 {
+    width: 50%;
+}
+.section1 li{
+    padding: 0rem .5rem .5rem .5rem;
+    padding-top: 1rem;
+}
+.section2{
+    float: right;
+    margin-top: -33%;
+}
+.section2 li{
+    padding: .5rem .5rem .5rem .5rem;
+}
+.section2 li input {
+    border: none;
+    border-radius: 3%;
+    height: 1.5rem;
+}
+/* start of the button container */
+.btn-container button {
     width: 100%;
-}
-.product-container{
-margin-left: 3%;
-}
-.product-container h3{
-font-size: 1.4rem;
-}
-.price-container span{
-font-size: 1.3rem;
-margin-left: 3%;
-}
-.coup_container input{
-    margin-top: 30%;
-margin-left:-60%;
 border: none;
-height: 1.7rem;
-border-radius: 4%;
+height: 3.5rem;
+margin-top: 2%;
+background-color:#ec5252;
+color: var(--white);
+font-size: 1.5rem;
 }
-.price-reducer  button{
-    margin-top: 7.3rem;
-border: none;
-height: 1.8rem;
-border-radius: 2%;
-background-color: #202020;
-border: 1px solid #FFDB58;
-width: 100%;
-font-size: .9rem;
-color: #FFDB58;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.price-section{
-    width: 100%;
-    margin-left: 3%;
-}
-.price-container{
-    display: flex;
-}
-.price-section h3{
-    font-size: 1.3rem;
-}
-.name-display ul{
-margin-left: -20%;
-    list-style-type: none;
-    font-size: 1.2rem;
-}
-.name-display ul li{
-    margin-bottom: 2%;
-}
-.data-display ul{
-list-style-type: none;
-}
-.data-entry{
-    border:none;
-    margin-bottom: 7%;
-    height: 1.2rem;
-    border-radius: 4%;
-}
-.submit-pay-now button{
-    width: 100%;
-height: 3rem;
-font-size: 1.3rem;
-background-color: #ec5252;
-color: white;
-border:none;
-}
+/* end of the button container */
+    
